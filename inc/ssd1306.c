@@ -1,6 +1,8 @@
 #include "ssd1306.h"
 #include "font.h"
 
+#define FONT_LOWERCASE_OFFSET 37 
+
 void ssd1306_init(ssd1306_t *ssd, uint8_t width, uint8_t height, bool external_vcc, uint8_t address, i2c_inst_t *i2c) {
   ssd->width = width;
   ssd->height = height;
@@ -164,6 +166,9 @@ void ssd1306_draw_char(ssd1306_t *ssd, char c, uint8_t x, uint8_t y)
   }else  if (c >= '0' && c <= '9')
   {
     index = (c - '0' + 1) * 8; // Adiciona o deslocamento necessário
+  } else if (c >= 'a' && c <= 'z')
+  {
+    index = ((c - 'a') + FONT_LOWERCASE_OFFSET) * 8; // Para letras minúsculas
   }
   
   for (uint8_t i = 0; i < 8; ++i)
