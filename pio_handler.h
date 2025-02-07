@@ -13,5 +13,6 @@ void clear_leds(void);
 void set_led(int index, uint8_t r, uint8_t g, uint8_t b);
 void set_all_leds(uint8_t r, uint8_t g, uint8_t b);
 void write_leds(void);
+void display_number(uint8_t number);
 
 #endif // PIO_HANDLER_H
