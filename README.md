@@ -12,7 +12,7 @@ Este projeto demonstra a utilização da comunicação serial com o microcontrol
 - **Exibição em Matriz de LEDs WS2812B:** Exibe números de 0 a 9 em uma matriz de LEDs 5x5.
 
 ## Vídeo Demonstração
-[![Demonstração do Projeto realizado por Italo Cauã da Silva Santos](https://img.youtube.com/vi/kMkJ2YTKotI/0.jpg)](https://www.youtube.com/watch?v=kMkJ2YTKotI)
+[![Demonstração do Projeto realizado por Italo Cauã da Silva Santos](https://img.youtube.com/vi/4yq1NBuGysc/0.jpg)](https://www.youtube.com/watch?v=4yq1NBuGysc)
 
 ## Como Executar o Projeto
 
